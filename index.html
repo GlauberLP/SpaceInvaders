@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/space.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <h1 id="tituloJogo">Space Invaders</h1>
+        <p id="pontuacao">Pontuação: 0</p>
+        <p id="vidas">Vidas: 3</p>
+        <audio id="somtiro" src="tiro.mp3"></audio>
+        <canvas id="telaJogo" width="800" height="600"></canvas>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p id="mensagemModal"></p>
+            <button id="botaoContinuar" class="botao">Continuar</button>
+            <button id="botaoTerminar" class="botao">Terminar</button>
+        </div>
+    </div>
+</body>
+</html>

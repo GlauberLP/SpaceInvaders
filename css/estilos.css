@@ -1,0 +1,71 @@
+/* -= CONFIGURAÇÕES GERAIS DA TELA =- */
+body {
+    margin: 0; /* remove as margens do corpo do documento html */
+    padding: 0; /* remove o preenchimento padrão do documento */
+    display: flex; /* permite um alinhamento avançado de elementos filhos */
+    justify-content: center; /* centraliza os elementos filhos horizontalmente */
+    align-items: center; /* centraliza os elementos filhos verticalmente */
+    height: 100vh; /* define a altura do corpo para ser igual a 100% da janela do navegador */
+    background-color: #000; /* cor de fundo da página */
+    font-family: Arial, Helvetica, sans-serif; /* definindo fontes sem serifa */
+}
+
+/* -= ESTILIZANDO O CONTAINER DO JOGO =- */
+#container {
+    text-align: center; /* alinhando texto, cabeçalhos e botões horizontalmente */
+    position: relative; /* coloca o elemento em um "estado posicionado", mas sem tirá-lo do fluxo normal da página. */
+}
+
+#tituloJogo {
+    font-size: 36px; /* define tamanho do titulo para 36px */
+    color: #fff; /* define cor do titulo para cor branca */
+    margin-bottom: 20px; /* adiciona uma margem abaixo do titulo para separa-lo dos elementos que estão abaixo */
+}
+
+#pontuacao {
+    font-size: 24px; /* define tamanho da fonte para 24px */
+    color: #fff; /* define cor do testo para cor branca */
+    margin-bottom: 10px; /* adiciona uma margem abaixo do titulo para separa-lo dos elementos que estão abaixo */
+}
+
+#vidas {
+    font-size: 24px; /* define tamanho da fonte para 24px */
+    color: #fff; /* define cor do testo para cor branca */
+}
+
+/* -= ÁREA DE JOGO (CANVAS) =- */
+canvas {
+    border: 2px solid #fff; /* inserindo borda de 2 pixels na cor branca para destacar area do jogo */
+}
+
+/* -= ESTILO DO MODAL =- */
+.modal {
+    display: none; /* O modal começa invisível. Ele só vai aparecer quando você muda para display: flex via JavaScript. */
+    position: fixed; /* Faz o modal ficar preso à tela, não ao container. */
+    z-index: 1; /* Coloca o modal acima de todos os outros elementos. */
+    left: 0; /* Define que o modal começa no canto superior esquerdo da tela. */
+    top: 0;
+    width: 100%;
+    height: 100%; /* Faz o modal ocupar 100% da largura e altura da tela. */
+    overflow: auto; /* Se o conteúdo interno do modal for maior que a tela, ele permite rolagem. */
+    background-color: rgba(0, 0, 0, 0.4); /* Cria o fundo escuro transparente. */
+    justify-content: center;
+    align-items: center; /* centralizam o conteúdo horizontalmente e verticalmente. */
+}
+
+/* -= CONTEÚDO DA JANELA MODAL =- */
+.modal-content {
+    background-color: #fff; /* cor de fundo da modal como branco */
+    margin: auto; /* centralizado o conteudo da modal */
+    padding: 20px; /* adiciona espaçamento de 20px em todas as direções */
+    border: 1px solid #888; /* adiciona uma borda solida de 1px ao redor do conteudo da modal */
+    width: 80%; /* largura da modal 80% */
+    text-align: center; /* alinha os textos e outros elementos dentro da container */
+}
+
+/* -= CONFIGURANDO OS BOTÕES DO MODAL =- */
+.botao {
+    margin: 10px; /* adiciona uma margem de 10px ao redor de cada botão separando de outros elementos */
+    padding: 10px 20px; /* adiciona preenchimento no botão 10px na vertical e 20 px na horizontal */
+    font-size: 16px; /* tamanho da fonte em 16px */
+}
